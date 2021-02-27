@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LuckyTextileModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'LuckyTextile.dbo.v_Employee' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="v_Employee">
+          <Key>
+            <PropertyRef Name="TitleCode" />
+            <PropertyRef Name="TitleName" />
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="FullName" />
+            <PropertyRef Name="DateOfBirth" />
+            <PropertyRef Name="PlaceOfBirth" />
+            <PropertyRef Name="NicNumber" />
+            <PropertyRef Name="MaritalStatusCode" />
+            <PropertyRef Name="MaritalStatusName" />
+            <PropertyRef Name="GenderCode" />
+            <PropertyRef Name="GenderName" />
+            <PropertyRef Name="CNICExpiryDate" />
+            <PropertyRef Name="NationalityCode" />
+            <PropertyRef Name="NationalityName" />
+            <PropertyRef Name="ReligionCode" />
+            <PropertyRef Name="ReligionName" />
+            <PropertyRef Name="EmployeeCode" />
+            <PropertyRef Name="EmployeeNumber" />
+            <PropertyRef Name="AttendanceID" />
+            <PropertyRef Name="BankCode" />
+            <PropertyRef Name="BankName" />
+            <PropertyRef Name="AccountNumber" />
+            <PropertyRef Name="BranchCode" />
+            <PropertyRef Name="BranchName" />
+            <PropertyRef Name="ApprovedSalary" />
+            <PropertyRef Name="Email" />
+            <PropertyRef Name="ShiftCode" />
+            <PropertyRef Name="ShiftName" />
+            <PropertyRef Name="JobCategoryCode" />
+            <PropertyRef Name="JobCategoryName" />
+            <PropertyRef Name="DateOfAppointment" />
+            <PropertyRef Name="DesignationCode" />
+            <PropertyRef Name="DesignationName" />
+            <PropertyRef Name="GradeCode" />
+            <PropertyRef Name="GradeName" />
+            <PropertyRef Name="ResidentalAddress" />
+            <PropertyRef Name="ResidentalCity" />
+            <PropertyRef Name="ResidentalCountry" />
+            <PropertyRef Name="MobileNumber" />
+            <PropertyRef Name="FatherName" />
+            <PropertyRef Name="MotherName" />
+            <PropertyRef Name="RelationName" />
+            <PropertyRef Name="RelationType" />
+            <PropertyRef Name="EmploymentTypeCode" />
+            <PropertyRef Name="EmploymentTypeName" />
+            <PropertyRef Name="LocationCode" />
+            <PropertyRef Name="LocationName" />
+            <PropertyRef Name="GeolocationCode" />
+            <PropertyRef Name="GeolocationName" />
+            <PropertyRef Name="ReportingDesignationCode" />
+            <PropertyRef Name="ReportingDesignationName" />
+            <PropertyRef Name="ReportingPersonCode" />
+            <PropertyRef Name="ReportingPersonName" />
+            <PropertyRef Name="Level1Code" />
+            <PropertyRef Name="Level 1(Group/Company)" />
+            <PropertyRef Name="Level2Code" />
+            <PropertyRef Name="Level 2 (Unit)" />
+            <PropertyRef Name="Level3Code" />
+            <PropertyRef Name="Level 3 (Sub-Unit)" />
+            <PropertyRef Name="Level4Code" />
+            <PropertyRef Name="Level 4 / Function" />
+            <PropertyRef Name="Level5Code" />
+            <PropertyRef Name="Level 5 / Department" />
+            <PropertyRef Name="Level6Code" />
+            <PropertyRef Name="Level 6 / Sub Department" />
+            <PropertyRef Name="Level7Code" />
+            <PropertyRef Name="Level 7 / Section" />
+            <PropertyRef Name="Level8Code" />
+            <PropertyRef Name="Level 8 / Machine / Line / Area" />
+            <PropertyRef Name="JoinedDesignationCode" />
+            <PropertyRef Name="JoinedDesignationName" />
+            <PropertyRef Name="ExtensionNo." />
+            <PropertyRef Name="ConfirmationDate" />
+            <PropertyRef Name="ResignedDate" />
+            <PropertyRef Name="CreatedByCode" />
+            <PropertyRef Name="CreatedByName" />
+            <PropertyRef Name="Status" />
+          </Key>
+          <Property Name="TitleCode" Type="int" Nullable="false" />
+          <Property Name="TitleName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="DateOfBirth" Type="datetime" Nullable="false" />
+          <Property Name="PlaceOfBirth" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="NicNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MaritalStatusCode" Type="int" Nullable="false" />
+          <Property Name="MaritalStatusName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="GenderCode" Type="int" Nullable="false" />
+          <Property Name="GenderName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CNICExpiryDate" Type="datetime" Nullable="false" />
+          <Property Name="NationalityCode" Type="int" Nullable="false" />
+          <Property Name="NationalityName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="ReligionCode" Type="int" Nullable="false" />
+          <Property Name="ReligionName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="EmployeeCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="EmployeeNumber" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="AttendanceID" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="BankCode" Type="int" Nullable="false" />
+          <Property Name="BankName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="AccountNumber" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="BranchCode" Type="int" Nullable="false" />
+          <Property Name="BranchName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="ApprovedSalary" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ShiftCode" Type="int" Nullable="false" />
+          <Property Name="ShiftName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="JobCategoryCode" Type="int" Nullable="false" />
+          <Property Name="JobCategoryName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="DateOfAppointment" Type="datetime" Nullable="false" />
+          <Property Name="DesignationCode" Type="int" Nullable="false" />
+          <Property Name="DesignationName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="GradeCode" Type="int" Nullable="false" />
+          <Property Name="GradeName" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ResidentalAddress" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ResidentalCity" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ResidentalCountry" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="MobileNumber" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="FatherName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="MotherName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="RelationName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="RelationType" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="EmploymentTypeCode" Type="int" Nullable="false" />
+          <Property Name="EmploymentTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LocationCode" Type="int" Nullable="false" />
+          <Property Name="LocationName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="GeolocationCode" Type="int" Nullable="false" />
+          <Property Name="GeolocationName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="ReportingDesignationCode" Type="int" Nullable="false" />
+          <Property Name="ReportingDesignationName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ReportingPersonCode" Type="int" Nullable="false" />
+          <Property Name="ReportingPersonName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Level1Code" Type="int" Nullable="false" />
+          <Property Name="Level 1(Group/Company)" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Level2Code" Type="int" Nullable="false" />
+          <Property Name="Level 2 (Unit)" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Level3Code" Type="int" Nullable="false" />
+          <Property Name="Level 3 (Sub-Unit)" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Level4Code" Type="int" Nullable="false" />
+          <Property Name="Level 4 / Function" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Level5Code" Type="int" Nullable="false" />
+          <Property Name="Level 5 / Department" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Level6Code" Type="int" Nullable="false" />
+          <Property Name="Level 6 / Sub Department" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Level7Code" Type="int" Nullable="false" />
+          <Property Name="Level 7 / Section" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Level8Code" Type="int" Nullable="false" />
+          <Property Name="Level 8 / Machine / Line / Area" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="JoinedDesignationCode" Type="int" Nullable="false" />
+          <Property Name="JoinedDesignationName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ExtensionNo." Type="nvarchar" MaxLength="1500" Nullable="false" />
+          <Property Name="ConfirmationDate" Type="datetime" Nullable="false" />
+          <Property Name="ResignedDate" Type="datetime" Nullable="false" />
+          <Property Name="CreatedByCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="CreatedByName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="9" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="LuckyTextileModelStoreContainer">
+          <EntitySet Name="v_Employee" EntityType="Self.v_Employee" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[v_Employee].[TitleCode] AS [TitleCode], 
+[v_Employee].[TitleName] AS [TitleName], 
+[v_Employee].[FirstName] AS [FirstName], 
+[v_Employee].[FullName] AS [FullName], 
+[v_Employee].[DateOfBirth] AS [DateOfBirth], 
+[v_Employee].[PlaceOfBirth] AS [PlaceOfBirth], 
+[v_Employee].[NicNumber] AS [NicNumber], 
+[v_Employee].[MaritalStatusCode] AS [MaritalStatusCode], 
+[v_Employee].[MaritalStatusName] AS [MaritalStatusName], 
+[v_Employee].[GenderCode] AS [GenderCode], 
+[v_Employee].[GenderName] AS [GenderName], 
+[v_Employee].[CNICExpiryDate] AS [CNICExpiryDate], 
+[v_Employee].[NationalityCode] AS [NationalityCode], 
+[v_Employee].[NationalityName] AS [NationalityName], 
+[v_Employee].[ReligionCode] AS [ReligionCode], 
+[v_Employee].[ReligionName] AS [ReligionName], 
+[v_Employee].[EmployeeCode] AS [EmployeeCode], 
+[v_Employee].[EmployeeNumber] AS [EmployeeNumber], 
+[v_Employee].[AttendanceID] AS [AttendanceID], 
+[v_Employee].[BankCode] AS [BankCode], 
+[v_Employee].[BankName] AS [BankName], 
+[v_Employee].[AccountNumber] AS [AccountNumber], 
+[v_Employee].[BranchCode] AS [BranchCode], 
+[v_Employee].[BranchName] AS [BranchName], 
+[v_Employee].[ApprovedSalary] AS [ApprovedSalary], 
+[v_Employee].[Email] AS [Email], 
+[v_Employee].[ShiftCode] AS [ShiftCode], 
+[v_Employee].[ShiftName] AS [ShiftName], 
+[v_Employee].[JobCategoryCode] AS [JobCategoryCode], 
+[v_Employee].[JobCategoryName] AS [JobCategoryName], 
+[v_Employee].[DateOfAppointment] AS [DateOfAppointment], 
+[v_Employee].[DesignationCode] AS [DesignationCode], 
+[v_Employee].[DesignationName] AS [DesignationName], 
+[v_Employee].[GradeCode] AS [GradeCode], 
+[v_Employee].[GradeName] AS [GradeName], 
+[v_Employee].[ResidentalAddress] AS [ResidentalAddress], 
+[v_Employee].[ResidentalCity] AS [ResidentalCity], 
+[v_Employee].[ResidentalCountry] AS [ResidentalCountry], 
+[v_Employee].[MobileNumber] AS [MobileNumber], 
+[v_Employee].[FatherName] AS [FatherName], 
+[v_Employee].[MotherName] AS [MotherName], 
+[v_Employee].[RelationName] AS [RelationName], 
+[v_Employee].[RelationType] AS [RelationType], 
+[v_Employee].[EmploymentTypeCode] AS [EmploymentTypeCode], 
+[v_Employee].[EmploymentTypeName] AS [EmploymentTypeName], 
+[v_Employee].[LocationCode] AS [LocationCode], 
+[v_Employee].[LocationName] AS [LocationName], 
+[v_Employee].[GeolocationCode] AS [GeolocationCode], 
+[v_Employee].[GeolocationName] AS [GeolocationName], 
+[v_Employee].[ReportingDesignationCode] AS [ReportingDesignationCode], 
+[v_Employee].[ReportingDesignationName] AS [ReportingDesignationName], 
+[v_Employee].[ReportingPersonCode] AS [ReportingPersonCode], 
+[v_Employee].[ReportingPersonName] AS [ReportingPersonName], 
+[v_Employee].[Level1Code] AS [Level1Code], 
+[v_Employee].[Level 1(Group/Company)] AS [Level 1(Group/Company)], 
+[v_Employee].[Level2Code] AS [Level2Code], 
+[v_Employee].[Level 2 (Unit)] AS [Level 2 (Unit)], 
+[v_Employee].[Level3Code] AS [Level3Code], 
+[v_Employee].[Level 3 (Sub-Unit)] AS [Level 3 (Sub-Unit)], 
+[v_Employee].[Level4Code] AS [Level4Code], 
+[v_Employee].[Level 4 / Function] AS [Level 4 / Function], 
+[v_Employee].[Level5Code] AS [Level5Code], 
+[v_Employee].[Level 5 / Department] AS [Level 5 / Department], 
+[v_Employee].[Level6Code] AS [Level6Code], 
+[v_Employee].[Level 6 / Sub Department] AS [Level 6 / Sub Department], 
+[v_Employee].[Level7Code] AS [Level7Code], 
+[v_Employee].[Level 7 / Section] AS [Level 7 / Section], 
+[v_Employee].[Level8Code] AS [Level8Code], 
+[v_Employee].[Level 8 / Machine / Line / Area] AS [Level 8 / Machine / Line / Area], 
+[v_Employee].[JoinedDesignationCode] AS [JoinedDesignationCode], 
+[v_Employee].[JoinedDesignationName] AS [JoinedDesignationName], 
+[v_Employee].[ExtensionNo.] AS [ExtensionNo.], 
+[v_Employee].[ConfirmationDate] AS [ConfirmationDate], 
+[v_Employee].[ResignedDate] AS [ResignedDate], 
+[v_Employee].[CreatedByCode] AS [CreatedByCode], 
+[v_Employee].[CreatedByName] AS [CreatedByName], 
+[v_Employee].[Status] AS [Status]
+FROM [dbo].[v_Employee] AS [v_Employee]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LuckyTextileModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="v_Employee">
+          <Key>
+            <PropertyRef Name="TitleCode" />
+            <PropertyRef Name="TitleName" />
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="FullName" />
+            <PropertyRef Name="DateOfBirth" />
+            <PropertyRef Name="PlaceOfBirth" />
+            <PropertyRef Name="NicNumber" />
+            <PropertyRef Name="MaritalStatusCode" />
+            <PropertyRef Name="MaritalStatusName" />
+            <PropertyRef Name="GenderCode" />
+            <PropertyRef Name="GenderName" />
+            <PropertyRef Name="CNICExpiryDate" />
+            <PropertyRef Name="NationalityCode" />
+            <PropertyRef Name="NationalityName" />
+            <PropertyRef Name="ReligionCode" />
+            <PropertyRef Name="ReligionName" />
+            <PropertyRef Name="EmployeeCode" />
+            <PropertyRef Name="EmployeeNumber" />
+            <PropertyRef Name="AttendanceID" />
+            <PropertyRef Name="BankCode" />
+            <PropertyRef Name="BankName" />
+            <PropertyRef Name="AccountNumber" />
+            <PropertyRef Name="BranchCode" />
+            <PropertyRef Name="BranchName" />
+            <PropertyRef Name="ApprovedSalary" />
+            <PropertyRef Name="Email" />
+            <PropertyRef Name="ShiftCode" />
+            <PropertyRef Name="ShiftName" />
+            <PropertyRef Name="JobCategoryCode" />
+            <PropertyRef Name="JobCategoryName" />
+            <PropertyRef Name="DateOfAppointment" />
+            <PropertyRef Name="DesignationCode" />
+            <PropertyRef Name="DesignationName" />
+            <PropertyRef Name="GradeCode" />
+            <PropertyRef Name="GradeName" />
+            <PropertyRef Name="ResidentalAddress" />
+            <PropertyRef Name="ResidentalCity" />
+            <PropertyRef Name="ResidentalCountry" />
+            <PropertyRef Name="MobileNumber" />
+            <PropertyRef Name="FatherName" />
+            <PropertyRef Name="MotherName" />
+            <PropertyRef Name="RelationName" />
+            <PropertyRef Name="RelationType" />
+            <PropertyRef Name="EmploymentTypeCode" />
+            <PropertyRef Name="EmploymentTypeName" />
+            <PropertyRef Name="LocationCode" />
+            <PropertyRef Name="LocationName" />
+            <PropertyRef Name="GeolocationCode" />
+            <PropertyRef Name="GeolocationName" />
+            <PropertyRef Name="ReportingDesignationCode" />
+            <PropertyRef Name="ReportingDesignationName" />
+            <PropertyRef Name="ReportingPersonCode" />
+            <PropertyRef Name="ReportingPersonName" />
+            <PropertyRef Name="Level1Code" />
+            <PropertyRef Name="Level_1_Group_Company_" />
+            <PropertyRef Name="Level2Code" />
+            <PropertyRef Name="Level_2__Unit_" />
+            <PropertyRef Name="Level3Code" />
+            <PropertyRef Name="Level_3__Sub_Unit_" />
+            <PropertyRef Name="Level4Code" />
+            <PropertyRef Name="Level_4___Function" />
+            <PropertyRef Name="Level5Code" />
+            <PropertyRef Name="Level_5___Department" />
+            <PropertyRef Name="Level6Code" />
+            <PropertyRef Name="Level_6___Sub_Department" />
+            <PropertyRef Name="Level7Code" />
+            <PropertyRef Name="Level_7___Section" />
+            <PropertyRef Name="Level8Code" />
+            <PropertyRef Name="Level_8___Machine___Line___Area" />
+            <PropertyRef Name="JoinedDesignationCode" />
+            <PropertyRef Name="JoinedDesignationName" />
+            <PropertyRef Name="ExtensionNo_" />
+            <PropertyRef Name="ConfirmationDate" />
+            <PropertyRef Name="ResignedDate" />
+            <PropertyRef Name="CreatedByCode" />
+            <PropertyRef Name="CreatedByName" />
+            <PropertyRef Name="Status" />
+          </Key>
+          <Property Name="TitleCode" Type="Int32" Nullable="false" />
+          <Property Name="TitleName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FullName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PlaceOfBirth" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NicNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MaritalStatusCode" Type="Int32" Nullable="false" />
+          <Property Name="MaritalStatusName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GenderCode" Type="Int32" Nullable="false" />
+          <Property Name="GenderName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CNICExpiryDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NationalityCode" Type="Int32" Nullable="false" />
+          <Property Name="NationalityName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReligionCode" Type="Int32" Nullable="false" />
+          <Property Name="ReligionName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EmployeeCode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EmployeeNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AttendanceID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BankCode" Type="Int32" Nullable="false" />
+          <Property Name="BankName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AccountNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BranchCode" Type="Int32" Nullable="false" />
+          <Property Name="BranchName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ApprovedSalary" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ShiftCode" Type="Int32" Nullable="false" />
+          <Property Name="ShiftName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="JobCategoryCode" Type="Int32" Nullable="false" />
+          <Property Name="JobCategoryName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DateOfAppointment" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DesignationCode" Type="Int32" Nullable="false" />
+          <Property Name="DesignationName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GradeCode" Type="Int32" Nullable="false" />
+          <Property Name="GradeName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ResidentalAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ResidentalCity" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ResidentalCountry" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MobileNumber" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FatherName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MotherName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RelationName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RelationType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EmploymentTypeCode" Type="Int32" Nullable="false" />
+          <Property Name="EmploymentTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LocationCode" Type="Int32" Nullable="false" />
+          <Property Name="LocationName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GeolocationCode" Type="Int32" Nullable="false" />
+          <Property Name="GeolocationName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReportingDesignationCode" Type="Int32" Nullable="false" />
+          <Property Name="ReportingDesignationName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReportingPersonCode" Type="Int32" Nullable="false" />
+          <Property Name="ReportingPersonName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Level1Code" Type="Int32" Nullable="false" />
+          <Property Name="Level_1_Group_Company_" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Level2Code" Type="Int32" Nullable="false" />
+          <Property Name="Level_2__Unit_" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Level3Code" Type="Int32" Nullable="false" />
+          <Property Name="Level_3__Sub_Unit_" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Level4Code" Type="Int32" Nullable="false" />
+          <Property Name="Level_4___Function" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Level5Code" Type="Int32" Nullable="false" />
+          <Property Name="Level_5___Department" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Level6Code" Type="Int32" Nullable="false" />
+          <Property Name="Level_6___Sub_Department" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Level7Code" Type="Int32" Nullable="false" />
+          <Property Name="Level_7___Section" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Level8Code" Type="Int32" Nullable="false" />
+          <Property Name="Level_8___Machine___Line___Area" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="JoinedDesignationCode" Type="Int32" Nullable="false" />
+          <Property Name="JoinedDesignationName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ExtensionNo_" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ConfirmationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ResignedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedByCode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedByName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="LuckyTextileEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="v_Employee" EntityType="Self.v_Employee" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LuckyTextileModelStoreContainer" CdmEntityContainer="LuckyTextileEntities">
+          <EntitySetMapping Name="v_Employee">
+            <EntityTypeMapping TypeName="LuckyTextileModel.v_Employee">
+              <MappingFragment StoreEntitySet="v_Employee">
+                <ScalarProperty Name="TitleCode" ColumnName="TitleCode" />
+                <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="PlaceOfBirth" ColumnName="PlaceOfBirth" />
+                <ScalarProperty Name="NicNumber" ColumnName="NicNumber" />
+                <ScalarProperty Name="MaritalStatusCode" ColumnName="MaritalStatusCode" />
+                <ScalarProperty Name="MaritalStatusName" ColumnName="MaritalStatusName" />
+                <ScalarProperty Name="GenderCode" ColumnName="GenderCode" />
+                <ScalarProperty Name="GenderName" ColumnName="GenderName" />
+                <ScalarProperty Name="CNICExpiryDate" ColumnName="CNICExpiryDate" />
+                <ScalarProperty Name="NationalityCode" ColumnName="NationalityCode" />
+                <ScalarProperty Name="NationalityName" ColumnName="NationalityName" />
+                <ScalarProperty Name="ReligionCode" ColumnName="ReligionCode" />
+                <ScalarProperty Name="ReligionName" ColumnName="ReligionName" />
+                <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+                <ScalarProperty Name="EmployeeNumber" ColumnName="EmployeeNumber" />
+                <ScalarProperty Name="AttendanceID" ColumnName="AttendanceID" />
+                <ScalarProperty Name="BankCode" ColumnName="BankCode" />
+                <ScalarProperty Name="BankName" ColumnName="BankName" />
+                <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+                <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+                <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+                <ScalarProperty Name="ApprovedSalary" ColumnName="ApprovedSalary" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="ShiftCode" ColumnName="ShiftCode" />
+                <ScalarProperty Name="ShiftName" ColumnName="ShiftName" />
+                <ScalarProperty Name="JobCategoryCode" ColumnName="JobCategoryCode" />
+                <ScalarProperty Name="JobCategoryName" ColumnName="JobCategoryName" />
+                <ScalarProperty Name="DateOfAppointment" ColumnName="DateOfAppointment" />
+                <ScalarProperty Name="DesignationCode" ColumnName="DesignationCode" />
+                <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+                <ScalarProperty Name="GradeCode" ColumnName="GradeCode" />
+                <ScalarProperty Name="GradeName" ColumnName="GradeName" />
+                <ScalarProperty Name="ResidentalAddress" ColumnName="ResidentalAddress" />
+                <ScalarProperty Name="ResidentalCity" ColumnName="ResidentalCity" />
+                <ScalarProperty Name="ResidentalCountry" ColumnName="ResidentalCountry" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+                <ScalarProperty Name="RelationName" ColumnName="RelationName" />
+                <ScalarProperty Name="RelationType" ColumnName="RelationType" />
+                <ScalarProperty Name="EmploymentTypeCode" ColumnName="EmploymentTypeCode" />
+                <ScalarProperty Name="EmploymentTypeName" ColumnName="EmploymentTypeName" />
+                <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="GeolocationCode" ColumnName="GeolocationCode" />
+                <ScalarProperty Name="GeolocationName" ColumnName="GeolocationName" />
+                <ScalarProperty Name="ReportingDesignationCode" ColumnName="ReportingDesignationCode" />
+                <ScalarProperty Name="ReportingDesignationName" ColumnName="ReportingDesignationName" />
+                <ScalarProperty Name="ReportingPersonCode" ColumnName="ReportingPersonCode" />
+                <ScalarProperty Name="ReportingPersonName" ColumnName="ReportingPersonName" />
+                <ScalarProperty Name="Level1Code" ColumnName="Level1Code" />
+                <ScalarProperty Name="Level_1_Group_Company_" ColumnName="Level 1(Group/Company)" />
+                <ScalarProperty Name="Level2Code" ColumnName="Level2Code" />
+                <ScalarProperty Name="Level_2__Unit_" ColumnName="Level 2 (Unit)" />
+                <ScalarProperty Name="Level3Code" ColumnName="Level3Code" />
+                <ScalarProperty Name="Level_3__Sub_Unit_" ColumnName="Level 3 (Sub-Unit)" />
+                <ScalarProperty Name="Level4Code" ColumnName="Level4Code" />
+                <ScalarProperty Name="Level_4___Function" ColumnName="Level 4 / Function" />
+                <ScalarProperty Name="Level5Code" ColumnName="Level5Code" />
+                <ScalarProperty Name="Level_5___Department" ColumnName="Level 5 / Department" />
+                <ScalarProperty Name="Level6Code" ColumnName="Level6Code" />
+                <ScalarProperty Name="Level_6___Sub_Department" ColumnName="Level 6 / Sub Department" />
+                <ScalarProperty Name="Level7Code" ColumnName="Level7Code" />
+                <ScalarProperty Name="Level_7___Section" ColumnName="Level 7 / Section" />
+                <ScalarProperty Name="Level8Code" ColumnName="Level8Code" />
+                <ScalarProperty Name="Level_8___Machine___Line___Area" ColumnName="Level 8 / Machine / Line / Area" />
+                <ScalarProperty Name="JoinedDesignationCode" ColumnName="JoinedDesignationCode" />
+                <ScalarProperty Name="JoinedDesignationName" ColumnName="JoinedDesignationName" />
+                <ScalarProperty Name="ExtensionNo_" ColumnName="ExtensionNo." />
+                <ScalarProperty Name="ConfirmationDate" ColumnName="ConfirmationDate" />
+                <ScalarProperty Name="ResignedDate" ColumnName="ResignedDate" />
+                <ScalarProperty Name="CreatedByCode" ColumnName="CreatedByCode" />
+                <ScalarProperty Name="CreatedByName" ColumnName="CreatedByName" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

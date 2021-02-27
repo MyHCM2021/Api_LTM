@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LuckyTextileModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="MI_Employer_Employee">
+          <Key>
+            <PropertyRef Name="EmployeeCode" />
+          </Key>
+          <Property Name="EmployeeCode" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TitleCode" Type="int" Nullable="false" />
+          <Property Name="Surname" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Forename" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="DateOfBirth" Type="datetime" Nullable="false" />
+          <Property Name="NicNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ReligionCode" Type="int" Nullable="false" />
+          <Property Name="MaritalStatusCode" Type="int" Nullable="false" />
+          <Property Name="GenderCode" Type="int" Nullable="false" />
+          <Property Name="PassportNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PassportExpiryDate" Type="datetime" Nullable="false" />
+          <Property Name="NationalityCode" Type="int" Nullable="false" />
+          <Property Name="RaceCode" Type="int" Nullable="false" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="OptionalEmail" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Number" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CardNumber" Type="int" Nullable="false" />
+          <Property Name="Rostered" Type="bit" Nullable="false" />
+          <Property Name="AssignmentCode" Type="int" Nullable="false" />
+          <Property Name="GroupNumber" Type="int" Nullable="false" />
+          <Property Name="CategoryCode" Type="int" Nullable="false" />
+          <Property Name="Salary" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="DateOfAppointment" Type="datetime" Nullable="false" />
+          <Property Name="SchemeCode" Type="int" Nullable="false" />
+          <Property Name="TextCardNumber" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Overtime" Type="bit" Nullable="false" />
+          <Property Name="DesignationCode" Type="int" Nullable="false" />
+          <Property Name="Casual" Type="bit" Nullable="false" />
+          <Property Name="AnnualTax" Type="bit" Nullable="false" />
+          <Property Name="MinimumOvertimePayment" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="EpfNo" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="UnionMember" Type="bit" Nullable="false" />
+          <Property Name="ConfirmedDate" Type="datetime" Nullable="false" />
+          <Property Name="GradeCode" Type="int" Nullable="false" />
+          <Property Name="ResignedDate" Type="datetime" Nullable="false" />
+          <Property Name="PageOrder" Type="int" Nullable="false" />
+          <Property Name="PAddress1" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="PAddress2" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="PAddress3" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="PPostalCode" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="PTelephone" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="PDistrictCode" Type="int" Nullable="false" />
+          <Property Name="RAddress1" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="RAddress2" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="RAddress3" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="RPostalCode" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="RTelephone" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="RDistrictCode" Type="int" Nullable="false" />
+          <Property Name="MobileNumber" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="PCostCentreCode" Type="int" Nullable="false" />
+          <Property Name="SCostCentreCode" Type="int" Nullable="false" />
+          <Property Name="ContactPersonName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPersonRelationTypeCode" Type="int" Nullable="false" />
+          <Property Name="ContactPersonOfficeAddress1" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPersonOfficeAddress2" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPersonOfficeAddress3" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPersonOfficeDistrictCode" Type="int" Nullable="false" />
+          <Property Name="ContactPersonOfficeCountryCode" Type="int" Nullable="false" />
+          <Property Name="ContactPersonOfficialPostalCode" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPersonOfficeTelephone" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ContactPersonResidenceAddress1" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPersonResidenceAddress2" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPersonResidenceAddress3" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPersonResidenceDistrictCode" Type="int" Nullable="false" />
+          <Property Name="ContactPersonResidenceCountryCode" Type="int" Nullable="false" />
+          <Property Name="ContactPersonResidenceTelephone" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ContactPersonResidencePostalCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ContactPersonMobileNumber" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="LivingCode" Type="int" Nullable="false" />
+          <Property Name="Income" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="FatherName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="FatherAge" Type="int" Nullable="false" />
+          <Property Name="FatherDateOfBirth" Type="datetime" Nullable="false" />
+          <Property Name="FatherOccupation" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="FatherEmployer" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="FatherAlive" Type="bit" Nullable="false" />
+          <Property Name="FatherMedicalEntitled" Type="bit" Nullable="false" />
+          <Property Name="MotherName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="MotherAge" Type="int" Nullable="false" />
+          <Property Name="MotherDateOfBirth" Type="datetime" Nullable="false" />
+          <Property Name="MotherOccupation" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="MotherEmployer" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="MotherAlive" Type="bit" Nullable="false" />
+          <Property Name="MotherMedicalEntitled" Type="bit" Nullable="false" />
+          <Property Name="NoOfDependants" Type="int" Nullable="false" />
+          <Property Name="NoOfChildren" Type="int" Nullable="false" />
+          <Property Name="Distance" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="TravelModeCode" Type="int" Nullable="false" />
+          <Property Name="RequisitionId" Type="int" Nullable="false" />
+          <Property Name="Msps" Type="bit" Nullable="false" />
+          <Property Name="EmploymentTypeCode" Type="int" Nullable="false" />
+          <Property Name="LocationCode" Type="int" Nullable="false" />
+          <Property Name="BloodGroupCode" Type="int" Nullable="false" />
+          <Property Name="JoinedTypeCode" Type="int" Nullable="false" />
+          <Property Name="ReportingDesignationCode" Type="int" Nullable="false" />
+          <Property Name="Level1Code" Type="int" Nullable="false" />
+          <Property Name="Level2Code" Type="int" Nullable="false" />
+          <Property Name="Level3Code" Type="int" Nullable="false" />
+          <Property Name="Level4Code" Type="int" Nullable="false" />
+          <Property Name="Level5Code" Type="int" Nullable="false" />
+          <Property Name="Level6Code" Type="int" Nullable="false" />
+          <Property Name="Level7Code" Type="int" Nullable="false" />
+          <Property Name="Level8Code" Type="int" Nullable="false" />
+          <Property Name="Level9Code" Type="int" Nullable="false" />
+          <Property Name="Level10Code" Type="int" Nullable="false" />
+          <Property Name="DriverLicenseNumber" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="MaidenName" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ElectoralDistrict" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ServicePhone" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="StaffPhone" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ImeiNo" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="CouplePhone" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="AnyOtherPhone" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="JoinedDesignationCode" Type="int" Nullable="false" />
+          <Property Name="PoleStationDistance" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="EncryptedSalary" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="ReportingPersonCode" Type="int" Nullable="false" />
+          <Property Name="Extension" Type="nvarchar" MaxLength="1500" Nullable="false" />
+          <Property Name="Surname2" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Meal" Type="bit" Nullable="false" />
+          <Property Name="PCountry" Type="int" Nullable="false" />
+          <Property Name="RCountry" Type="int" Nullable="false" />
+          <Property Name="CurrencyCode" Type="int" Nullable="false" />
+          <Property Name="EffectedDate" Type="datetime" Nullable="false" />
+          <Property Name="Initials" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="Expatriate" Type="bit" Nullable="false" />
+          <Property Name="Housing" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Transportation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NewSalary" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="CareerPathId" Type="int" Nullable="false" />
+          <Property Name="DeletedReason" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ImagePath" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="DistrictCode" Type="int" Nullable="false" />
+          <Property Name="ElectorateCode" Type="int" Nullable="false" />
+          <Property Name="PollingDivisionCode" Type="int" Nullable="false" />
+          <Property Name="PoliceStationCode" Type="int" Nullable="false" />
+          <Property Name="GramaSevakaCode" Type="int" Nullable="false" />
+          <Property Name="PostalCode" Type="nvarchar" MaxLength="25" Nullable="false" />
+          <Property Name="PostOffice" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ProvinceCode" Type="int" Nullable="false" />
+          <Property Name="DistanceFromWorkPlace" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="TimeTakentoTravel" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="DeletedReasonCategoryCode" Type="int" Nullable="false" />
+          <Property Name="OfficeMobileNumber" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="PresentZipCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PermanentZipCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PriorNoticePeriod" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DeletionTypeCode" Type="int" Nullable="false" />
+          <Property Name="PensionSchemeCode" Type="int" Nullable="false" />
+          <Property Name="AgaCertificateReceived" Type="bit" Nullable="false" />
+          <Property Name="ContractExpiryDate" Type="datetime" Nullable="false" />
+          <Property Name="ContactPerson2Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPerson2RelationTypeCode" Type="int" Nullable="false" />
+          <Property Name="ContactPerson2MobileNumber" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ContactPerson2OfficeAddress1" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPerson2OfficeAddress2" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPerson2OfficeAddress3" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPerson2OfficeDistrictCode" Type="int" Nullable="false" />
+          <Property Name="ContactPerson2OfficeCountryCode" Type="int" Nullable="false" />
+          <Property Name="ContactPerson2OfficialPostalCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ContactPerson2OfficeTelephone" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceAddress1" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceAddress2" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceAddress3" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceDistrictCode" Type="int" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceCountryCode" Type="int" Nullable="false" />
+          <Property Name="ContactPerson2ResidencePostalCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceTelephone" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="EtfNo" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="PrevoiusEpfNumber" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="PayIncentive" Type="bit" Nullable="false" />
+          <Property Name="VisaNumber" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="VisaExpiryDate" Type="datetime" Nullable="false" />
+          <Property Name="DateOfRetirement" Type="datetime" Nullable="false" />
+          <Property Name="EmployedCompanyCode" Type="int" Nullable="false" />
+          <Property Name="DateOfJoin" Type="datetime" Nullable="false" />
+          <Property Name="ParticipedToInduction" Type="bit" Nullable="false" />
+          <Property Name="BrAllowance" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="SecondedDepartmentCode" Type="int" Nullable="false" />
+          <Property Name="ReactivateDate" Type="datetime" Nullable="false" />
+          <Property Name="DateConfirmed" Type="datetime" Nullable="false" />
+          <Property Name="PreviousAppointmentDate" Type="datetime" Nullable="false" />
+          <Property Name="Functional" Type="int" Nullable="false" />
+          <Property Name="UnionStatus" Type="int" Nullable="false" />
+          <Property Name="GeolocationCode" Type="int" Nullable="false" />
+          <Property Name="SecondReportingDesignationCode" Type="int" Nullable="false" />
+          <Property Name="SecondReportingPersonCode" Type="int" Nullable="false" />
+          <Property Name="GlobalId" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ContactPersonEmail" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="ContactPerson2Email" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="SkypeId" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="LinkedInId" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="HousingAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="TransportationAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="PlaceOfBirth" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="FatherResidentialAddress" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="FatherPassportNumber" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="FatherContactNumber" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MotherResidentialAddress" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="MotherPassportNumber" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MotherContactNumber" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CompanyAssignedDate" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="bit" Nullable="false" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedBy" Type="int" Nullable="false" />
+          <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
+          <Property Name="DeletedBy" Type="int" Nullable="false" />
+          <Property Name="DeletedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="LuckyTextileModel1StoreContainer">
+          <EntitySet Name="MI_Employer_Employee" EntityType="Self.MI_Employer_Employee" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LuckyTextileModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="MI_Employer_Employee">
+          <Key>
+            <PropertyRef Name="EmployeeCode" />
+          </Key>
+          <Property Name="EmployeeCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Guid" Nullable="false" />
+          <Property Name="TitleCode" Type="Int32" Nullable="false" />
+          <Property Name="Surname" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FullName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Forename" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NicNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReligionCode" Type="Int32" Nullable="false" />
+          <Property Name="MaritalStatusCode" Type="Int32" Nullable="false" />
+          <Property Name="GenderCode" Type="Int32" Nullable="false" />
+          <Property Name="PassportNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PassportExpiryDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NationalityCode" Type="Int32" Nullable="false" />
+          <Property Name="RaceCode" Type="Int32" Nullable="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OptionalEmail" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Number" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CardNumber" Type="Int32" Nullable="false" />
+          <Property Name="Rostered" Type="Boolean" Nullable="false" />
+          <Property Name="AssignmentCode" Type="Int32" Nullable="false" />
+          <Property Name="GroupNumber" Type="Int32" Nullable="false" />
+          <Property Name="CategoryCode" Type="Int32" Nullable="false" />
+          <Property Name="Salary" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="DateOfAppointment" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SchemeCode" Type="Int32" Nullable="false" />
+          <Property Name="TextCardNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Overtime" Type="Boolean" Nullable="false" />
+          <Property Name="DesignationCode" Type="Int32" Nullable="false" />
+          <Property Name="Casual" Type="Boolean" Nullable="false" />
+          <Property Name="AnnualTax" Type="Boolean" Nullable="false" />
+          <Property Name="MinimumOvertimePayment" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="EpfNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UnionMember" Type="Boolean" Nullable="false" />
+          <Property Name="ConfirmedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="GradeCode" Type="Int32" Nullable="false" />
+          <Property Name="ResignedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PageOrder" Type="Int32" Nullable="false" />
+          <Property Name="PAddress1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PAddress2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PAddress3" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PPostalCode" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PTelephone" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PDistrictCode" Type="Int32" Nullable="false" />
+          <Property Name="RAddress1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RAddress2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RAddress3" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RPostalCode" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RTelephone" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RDistrictCode" Type="Int32" Nullable="false" />
+          <Property Name="MobileNumber" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PCostCentreCode" Type="Int32" Nullable="false" />
+          <Property Name="SCostCentreCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPersonName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonRelationTypeCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPersonOfficeAddress1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonOfficeAddress2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonOfficeAddress3" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonOfficeDistrictCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPersonOfficeCountryCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPersonOfficialPostalCode" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonOfficeTelephone" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonResidenceAddress1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonResidenceAddress2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonResidenceAddress3" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonResidenceDistrictCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPersonResidenceCountryCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPersonResidenceTelephone" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonResidencePostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonMobileNumber" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LivingCode" Type="Int32" Nullable="false" />
+          <Property Name="Income" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="FatherName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FatherAge" Type="Int32" Nullable="false" />
+          <Property Name="FatherDateOfBirth" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FatherOccupation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FatherEmployer" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FatherAlive" Type="Boolean" Nullable="false" />
+          <Property Name="FatherMedicalEntitled" Type="Boolean" Nullable="false" />
+          <Property Name="MotherName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MotherAge" Type="Int32" Nullable="false" />
+          <Property Name="MotherDateOfBirth" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="MotherOccupation" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MotherEmployer" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MotherAlive" Type="Boolean" Nullable="false" />
+          <Property Name="MotherMedicalEntitled" Type="Boolean" Nullable="false" />
+          <Property Name="NoOfDependants" Type="Int32" Nullable="false" />
+          <Property Name="NoOfChildren" Type="Int32" Nullable="false" />
+          <Property Name="Distance" Type="Decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="TravelModeCode" Type="Int32" Nullable="false" />
+          <Property Name="RequisitionId" Type="Int32" Nullable="false" />
+          <Property Name="Msps" Type="Boolean" Nullable="false" />
+          <Property Name="EmploymentTypeCode" Type="Int32" Nullable="false" />
+          <Property Name="LocationCode" Type="Int32" Nullable="false" />
+          <Property Name="BloodGroupCode" Type="Int32" Nullable="false" />
+          <Property Name="JoinedTypeCode" Type="Int32" Nullable="false" />
+          <Property Name="ReportingDesignationCode" Type="Int32" Nullable="false" />
+          <Property Name="Level1Code" Type="Int32" Nullable="false" />
+          <Property Name="Level2Code" Type="Int32" Nullable="false" />
+          <Property Name="Level3Code" Type="Int32" Nullable="false" />
+          <Property Name="Level4Code" Type="Int32" Nullable="false" />
+          <Property Name="Level5Code" Type="Int32" Nullable="false" />
+          <Property Name="Level6Code" Type="Int32" Nullable="false" />
+          <Property Name="Level7Code" Type="Int32" Nullable="false" />
+          <Property Name="Level8Code" Type="Int32" Nullable="false" />
+          <Property Name="Level9Code" Type="Int32" Nullable="false" />
+          <Property Name="Level10Code" Type="Int32" Nullable="false" />
+          <Property Name="DriverLicenseNumber" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MaidenName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ElectoralDistrict" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ServicePhone" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StaffPhone" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ImeiNo" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CouplePhone" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AnyOtherPhone" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="JoinedDesignationCode" Type="Int32" Nullable="false" />
+          <Property Name="PoleStationDistance" Type="Decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="EncryptedSalary" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ReportingPersonCode" Type="Int32" Nullable="false" />
+          <Property Name="Extension" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Surname2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Meal" Type="Boolean" Nullable="false" />
+          <Property Name="PCountry" Type="Int32" Nullable="false" />
+          <Property Name="RCountry" Type="Int32" Nullable="false" />
+          <Property Name="CurrencyCode" Type="Int32" Nullable="false" />
+          <Property Name="EffectedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Initials" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Expatriate" Type="Boolean" Nullable="false" />
+          <Property Name="Housing" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Transportation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NewSalary" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="CareerPathId" Type="Int32" Nullable="false" />
+          <Property Name="DeletedReason" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ImagePath" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DistrictCode" Type="Int32" Nullable="false" />
+          <Property Name="ElectorateCode" Type="Int32" Nullable="false" />
+          <Property Name="PollingDivisionCode" Type="Int32" Nullable="false" />
+          <Property Name="PoliceStationCode" Type="Int32" Nullable="false" />
+          <Property Name="GramaSevakaCode" Type="Int32" Nullable="false" />
+          <Property Name="PostalCode" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PostOffice" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProvinceCode" Type="Int32" Nullable="false" />
+          <Property Name="DistanceFromWorkPlace" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="TimeTakentoTravel" Type="Decimal" Precision="4" Scale="2" Nullable="false" />
+          <Property Name="DeletedReasonCategoryCode" Type="Int32" Nullable="false" />
+          <Property Name="OfficeMobileNumber" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PresentZipCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PermanentZipCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PriorNoticePeriod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DeletionTypeCode" Type="Int32" Nullable="false" />
+          <Property Name="PensionSchemeCode" Type="Int32" Nullable="false" />
+          <Property Name="AgaCertificateReceived" Type="Boolean" Nullable="false" />
+          <Property Name="ContractExpiryDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ContactPerson2Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2RelationTypeCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPerson2MobileNumber" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2OfficeAddress1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2OfficeAddress2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2OfficeAddress3" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2OfficeDistrictCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPerson2OfficeCountryCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPerson2OfficialPostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2OfficeTelephone" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceAddress1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceAddress2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceAddress3" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceDistrictCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceCountryCode" Type="Int32" Nullable="false" />
+          <Property Name="ContactPerson2ResidencePostalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2ResidenceTelephone" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EtfNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PrevoiusEpfNumber" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PayIncentive" Type="Boolean" Nullable="false" />
+          <Property Name="VisaNumber" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VisaExpiryDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateOfRetirement" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EmployedCompanyCode" Type="Int32" Nullable="false" />
+          <Property Name="DateOfJoin" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ParticipedToInduction" Type="Boolean" Nullable="false" />
+          <Property Name="BrAllowance" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="SecondedDepartmentCode" Type="Int32" Nullable="false" />
+          <Property Name="ReactivateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateConfirmed" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PreviousAppointmentDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Functional" Type="Int32" Nullable="false" />
+          <Property Name="UnionStatus" Type="Int32" Nullable="false" />
+          <Property Name="GeolocationCode" Type="Int32" Nullable="false" />
+          <Property Name="SecondReportingDesignationCode" Type="Int32" Nullable="false" />
+          <Property Name="SecondReportingPersonCode" Type="Int32" Nullable="false" />
+          <Property Name="GlobalId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPersonEmail" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactPerson2Email" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SkypeId" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LinkedInId" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HousingAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="TransportationAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="PlaceOfBirth" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FatherResidentialAddress" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FatherPassportNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FatherContactNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MotherResidentialAddress" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MotherPassportNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MotherContactNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CompanyAssignedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="Boolean" Nullable="false" />
+          <Property Name="Deleted" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedBy" Type="Int32" Nullable="false" />
+          <Property Name="UpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DeletedBy" Type="Int32" Nullable="false" />
+          <Property Name="DeletedDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="LuckyTextileEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MI_Employer_Employee" EntityType="Self.MI_Employer_Employee" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LuckyTextileModel1StoreContainer" CdmEntityContainer="LuckyTextileEntities1">
+          <EntitySetMapping Name="MI_Employer_Employee">
+            <EntityTypeMapping TypeName="LuckyTextileModel1.MI_Employer_Employee">
+              <MappingFragment StoreEntitySet="MI_Employer_Employee">
+                <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="TitleCode" ColumnName="TitleCode" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Forename" ColumnName="Forename" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="NicNumber" ColumnName="NicNumber" />
+                <ScalarProperty Name="ReligionCode" ColumnName="ReligionCode" />
+                <ScalarProperty Name="MaritalStatusCode" ColumnName="MaritalStatusCode" />
+                <ScalarProperty Name="GenderCode" ColumnName="GenderCode" />
+                <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+                <ScalarProperty Name="PassportExpiryDate" ColumnName="PassportExpiryDate" />
+                <ScalarProperty Name="NationalityCode" ColumnName="NationalityCode" />
+                <ScalarProperty Name="RaceCode" ColumnName="RaceCode" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="OptionalEmail" ColumnName="OptionalEmail" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+                <ScalarProperty Name="Rostered" ColumnName="Rostered" />
+                <ScalarProperty Name="AssignmentCode" ColumnName="AssignmentCode" />
+                <ScalarProperty Name="GroupNumber" ColumnName="GroupNumber" />
+                <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="DateOfAppointment" ColumnName="DateOfAppointment" />
+                <ScalarProperty Name="SchemeCode" ColumnName="SchemeCode" />
+                <ScalarProperty Name="TextCardNumber" ColumnName="TextCardNumber" />
+                <ScalarProperty Name="Overtime" ColumnName="Overtime" />
+                <ScalarProperty Name="DesignationCode" ColumnName="DesignationCode" />
+                <ScalarProperty Name="Casual" ColumnName="Casual" />
+                <ScalarProperty Name="AnnualTax" ColumnName="AnnualTax" />
+                <ScalarProperty Name="MinimumOvertimePayment" ColumnName="MinimumOvertimePayment" />
+                <ScalarProperty Name="EpfNo" ColumnName="EpfNo" />
+                <ScalarProperty Name="UnionMember" ColumnName="UnionMember" />
+                <ScalarProperty Name="ConfirmedDate" ColumnName="ConfirmedDate" />
+                <ScalarProperty Name="GradeCode" ColumnName="GradeCode" />
+                <ScalarProperty Name="ResignedDate" ColumnName="ResignedDate" />
+                <ScalarProperty Name="PageOrder" ColumnName="PageOrder" />
+                <ScalarProperty Name="PAddress1" ColumnName="PAddress1" />
+                <ScalarProperty Name="PAddress2" ColumnName="PAddress2" />
+                <ScalarProperty Name="PAddress3" ColumnName="PAddress3" />
+                <ScalarProperty Name="PPostalCode" ColumnName="PPostalCode" />
+                <ScalarProperty Name="PTelephone" ColumnName="PTelephone" />
+                <ScalarProperty Name="PDistrictCode" ColumnName="PDistrictCode" />
+                <ScalarProperty Name="RAddress1" ColumnName="RAddress1" />
+                <ScalarProperty Name="RAddress2" ColumnName="RAddress2" />
+                <ScalarProperty Name="RAddress3" ColumnName="RAddress3" />
+                <ScalarProperty Name="RPostalCode" ColumnName="RPostalCode" />
+                <ScalarProperty Name="RTelephone" ColumnName="RTelephone" />
+                <ScalarProperty Name="RDistrictCode" ColumnName="RDistrictCode" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="PCostCentreCode" ColumnName="PCostCentreCode" />
+                <ScalarProperty Name="SCostCentreCode" ColumnName="SCostCentreCode" />
+                <ScalarProperty Name="ContactPersonName" ColumnName="ContactPersonName" />
+                <ScalarProperty Name="ContactPersonRelationTypeCode" ColumnName="ContactPersonRelationTypeCode" />
+                <ScalarProperty Name="ContactPersonOfficeAddress1" ColumnName="ContactPersonOfficeAddress1" />
+                <ScalarProperty Name="ContactPersonOfficeAddress2" ColumnName="ContactPersonOfficeAddress2" />
+                <ScalarProperty Name="ContactPersonOfficeAddress3" ColumnName="ContactPersonOfficeAddress3" />
+                <ScalarProperty Name="ContactPersonOfficeDistrictCode" ColumnName="ContactPersonOfficeDistrictCode" />
+                <ScalarProperty Name="ContactPersonOfficeCountryCode" ColumnName="ContactPersonOfficeCountryCode" />
+                <ScalarProperty Name="ContactPersonOfficialPostalCode" ColumnName="ContactPersonOfficialPostalCode" />
+                <ScalarProperty Name="ContactPersonOfficeTelephone" ColumnName="ContactPersonOfficeTelephone" />
+                <ScalarProperty Name="ContactPersonResidenceAddress1" ColumnName="ContactPersonResidenceAddress1" />
+                <ScalarProperty Name="ContactPersonResidenceAddress2" ColumnName="ContactPersonResidenceAddress2" />
+                <ScalarProperty Name="ContactPersonResidenceAddress3" ColumnName="ContactPersonResidenceAddress3" />
+                <ScalarProperty Name="ContactPersonResidenceDistrictCode" ColumnName="ContactPersonResidenceDistrictCode" />
+                <ScalarProperty Name="ContactPersonResidenceCountryCode" ColumnName="ContactPersonResidenceCountryCode" />
+                <ScalarProperty Name="ContactPersonResidenceTelephone" ColumnName="ContactPersonResidenceTelephone" />
+                <ScalarProperty Name="ContactPersonResidencePostalCode" ColumnName="ContactPersonResidencePostalCode" />
+                <ScalarProperty Name="ContactPersonMobileNumber" ColumnName="ContactPersonMobileNumber" />
+                <ScalarProperty Name="LivingCode" ColumnName="LivingCode" />
+                <ScalarProperty Name="Income" ColumnName="Income" />
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="FatherAge" ColumnName="FatherAge" />
+                <ScalarProperty Name="FatherDateOfBirth" ColumnName="FatherDateOfBirth" />
+                <ScalarProperty Name="FatherOccupation" ColumnName="FatherOccupation" />
+                <ScalarProperty Name="FatherEmployer" ColumnName="FatherEmployer" />
+                <ScalarProperty Name="FatherAlive" ColumnName="FatherAlive" />
+                <ScalarProperty Name="FatherMedicalEntitled" ColumnName="FatherMedicalEntitled" />
+                <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+                <ScalarProperty Name="MotherAge" ColumnName="MotherAge" />
+                <ScalarProperty Name="MotherDateOfBirth" ColumnName="MotherDateOfBirth" />
+                <ScalarProperty Name="MotherOccupation" ColumnName="MotherOccupation" />
+                <ScalarProperty Name="MotherEmployer" ColumnName="MotherEmployer" />
+                <ScalarProperty Name="MotherAlive" ColumnName="MotherAlive" />
+                <ScalarProperty Name="MotherMedicalEntitled" ColumnName="MotherMedicalEntitled" />
+                <ScalarProperty Name="NoOfDependants" ColumnName="NoOfDependants" />
+                <ScalarProperty Name="NoOfChildren" ColumnName="NoOfChildren" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="TravelModeCode" ColumnName="TravelModeCode" />
+                <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+                <ScalarProperty Name="Msps" ColumnName="Msps" />
+                <ScalarProperty Name="EmploymentTypeCode" ColumnName="EmploymentTypeCode" />
+                <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+                <ScalarProperty Name="BloodGroupCode" ColumnName="BloodGroupCode" />
+                <ScalarProperty Name="JoinedTypeCode" ColumnName="JoinedTypeCode" />
+                <ScalarProperty Name="ReportingDesignationCode" ColumnName="ReportingDesignationCode" />
+                <ScalarProperty Name="Level1Code" ColumnName="Level1Code" />
+                <ScalarProperty Name="Level2Code" ColumnName="Level2Code" />
+                <ScalarProperty Name="Level3Code" ColumnName="Level3Code" />
+                <ScalarProperty Name="Level4Code" ColumnName="Level4Code" />
+                <ScalarProperty Name="Level5Code" ColumnName="Level5Code" />
+                <ScalarProperty Name="Level6Code" ColumnName="Level6Code" />
+                <ScalarProperty Name="Level7Code" ColumnName="Level7Code" />
+                <ScalarProperty Name="Level8Code" ColumnName="Level8Code" />
+                <ScalarProperty Name="Level9Code" ColumnName="Level9Code" />
+                <ScalarProperty Name="Level10Code" ColumnName="Level10Code" />
+                <ScalarProperty Name="DriverLicenseNumber" ColumnName="DriverLicenseNumber" />
+                <ScalarProperty Name="MaidenName" ColumnName="MaidenName" />
+                <ScalarProperty Name="ElectoralDistrict" ColumnName="ElectoralDistrict" />
+                <ScalarProperty Name="ServicePhone" ColumnName="ServicePhone" />
+                <ScalarProperty Name="StaffPhone" ColumnName="StaffPhone" />
+                <ScalarProperty Name="ImeiNo" ColumnName="ImeiNo" />
+                <ScalarProperty Name="CouplePhone" ColumnName="CouplePhone" />
+                <ScalarProperty Name="AnyOtherPhone" ColumnName="AnyOtherPhone" />
+                <ScalarProperty Name="JoinedDesignationCode" ColumnName="JoinedDesignationCode" />
+                <ScalarProperty Name="PoleStationDistance" ColumnName="PoleStationDistance" />
+                <ScalarProperty Name="EncryptedSalary" ColumnName="EncryptedSalary" />
+                <ScalarProperty Name="ReportingPersonCode" ColumnName="ReportingPersonCode" />
+                <ScalarProperty Name="Extension" ColumnName="Extension" />
+                <ScalarProperty Name="Surname2" ColumnName="Surname2" />
+                <ScalarProperty Name="Meal" ColumnName="Meal" />
+                <ScalarProperty Name="PCountry" ColumnName="PCountry" />
+                <ScalarProperty Name="RCountry" ColumnName="RCountry" />
+                <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+                <ScalarProperty Name="EffectedDate" ColumnName="EffectedDate" />
+                <ScalarProperty Name="Initials" ColumnName="Initials" />
+                <ScalarProperty Name="Expatriate" ColumnName="Expatriate" />
+                <ScalarProperty Name="Housing" ColumnName="Housing" />
+                <ScalarProperty Name="Transportation" ColumnName="Transportation" />
+                <ScalarProperty Name="NewSalary" ColumnName="NewSalary" />
+                <ScalarProperty Name="CareerPathId" ColumnName="CareerPathId" />
+                <ScalarProperty Name="DeletedReason" ColumnName="DeletedReason" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="DistrictCode" ColumnName="DistrictCode" />
+                <ScalarProperty Name="ElectorateCode" ColumnName="ElectorateCode" />
+                <ScalarProperty Name="PollingDivisionCode" ColumnName="PollingDivisionCode" />
+                <ScalarProperty Name="PoliceStationCode" ColumnName="PoliceStationCode" />
+                <ScalarProperty Name="GramaSevakaCode" ColumnName="GramaSevakaCode" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="PostOffice" ColumnName="PostOffice" />
+                <ScalarProperty Name="ProvinceCode" ColumnName="ProvinceCode" />
+                <ScalarProperty Name="DistanceFromWorkPlace" ColumnName="DistanceFromWorkPlace" />
+                <ScalarProperty Name="TimeTakentoTravel" ColumnName="TimeTakentoTravel" />
+                <ScalarProperty Name="DeletedReasonCategoryCode" ColumnName="DeletedReasonCategoryCode" />
+                <ScalarProperty Name="OfficeMobileNumber" ColumnName="OfficeMobileNumber" />
+                <ScalarProperty Name="PresentZipCode" ColumnName="PresentZipCode" />
+                <ScalarProperty Name="PermanentZipCode" ColumnName="PermanentZipCode" />
+                <ScalarProperty Name="PriorNoticePeriod" ColumnName="PriorNoticePeriod" />
+                <ScalarProperty Name="DeletionTypeCode" ColumnName="DeletionTypeCode" />
+                <ScalarProperty Name="PensionSchemeCode" ColumnName="PensionSchemeCode" />
+                <ScalarProperty Name="AgaCertificateReceived" ColumnName="AgaCertificateReceived" />
+                <ScalarProperty Name="ContractExpiryDate" ColumnName="ContractExpiryDate" />
+                <ScalarProperty Name="ContactPerson2Name" ColumnName="ContactPerson2Name" />
+                <ScalarProperty Name="ContactPerson2RelationTypeCode" ColumnName="ContactPerson2RelationTypeCode" />
+                <ScalarProperty Name="ContactPerson2MobileNumber" ColumnName="ContactPerson2MobileNumber" />
+                <ScalarProperty Name="ContactPerson2OfficeAddress1" ColumnName="ContactPerson2OfficeAddress1" />
+                <ScalarProperty Name="ContactPerson2OfficeAddress2" ColumnName="ContactPerson2OfficeAddress2" />
+                <ScalarProperty Name="ContactPerson2OfficeAddress3" ColumnName="ContactPerson2OfficeAddress3" />
+                <ScalarProperty Name="ContactPerson2OfficeDistrictCode" ColumnName="ContactPerson2OfficeDistrictCode" />
+                <ScalarProperty Name="ContactPerson2OfficeCountryCode" ColumnName="ContactPerson2OfficeCountryCode" />
+                <ScalarProperty Name="ContactPerson2OfficialPostalCode" ColumnName="ContactPerson2OfficialPostalCode" />
+                <ScalarProperty Name="ContactPerson2OfficeTelephone" ColumnName="ContactPerson2OfficeTelephone" />
+                <ScalarProperty Name="ContactPerson2ResidenceAddress1" ColumnName="ContactPerson2ResidenceAddress1" />
+                <ScalarProperty Name="ContactPerson2ResidenceAddress2" ColumnName="ContactPerson2ResidenceAddress2" />
+                <ScalarProperty Name="ContactPerson2ResidenceAddress3" ColumnName="ContactPerson2ResidenceAddress3" />
+                <ScalarProperty Name="ContactPerson2ResidenceDistrictCode" ColumnName="ContactPerson2ResidenceDistrictCode" />
+                <ScalarProperty Name="ContactPerson2ResidenceCountryCode" ColumnName="ContactPerson2ResidenceCountryCode" />
+                <ScalarProperty Name="ContactPerson2ResidencePostalCode" ColumnName="ContactPerson2ResidencePostalCode" />
+                <ScalarProperty Name="ContactPerson2ResidenceTelephone" ColumnName="ContactPerson2ResidenceTelephone" />
+                <ScalarProperty Name="EtfNo" ColumnName="EtfNo" />
+                <ScalarProperty Name="PrevoiusEpfNumber" ColumnName="PrevoiusEpfNumber" />
+                <ScalarProperty Name="PayIncentive" ColumnName="PayIncentive" />
+                <ScalarProperty Name="VisaNumber" ColumnName="VisaNumber" />
+                <ScalarProperty Name="VisaExpiryDate" ColumnName="VisaExpiryDate" />
+                <ScalarProperty Name="DateOfRetirement" ColumnName="DateOfRetirement" />
+                <ScalarProperty Name="EmployedCompanyCode" ColumnName="EmployedCompanyCode" />
+                <ScalarProperty Name="DateOfJoin" ColumnName="DateOfJoin" />
+                <ScalarProperty Name="ParticipedToInduction" ColumnName="ParticipedToInduction" />
+                <ScalarProperty Name="BrAllowance" ColumnName="BrAllowance" />
+                <ScalarProperty Name="SecondedDepartmentCode" ColumnName="SecondedDepartmentCode" />
+                <ScalarProperty Name="ReactivateDate" ColumnName="ReactivateDate" />
+                <ScalarProperty Name="DateConfirmed" ColumnName="DateConfirmed" />
+                <ScalarProperty Name="PreviousAppointmentDate" ColumnName="PreviousAppointmentDate" />
+                <ScalarProperty Name="Functional" ColumnName="Functional" />
+                <ScalarProperty Name="UnionStatus" ColumnName="UnionStatus" />
+                <ScalarProperty Name="GeolocationCode" ColumnName="GeolocationCode" />
+                <ScalarProperty Name="SecondReportingDesignationCode" ColumnName="SecondReportingDesignationCode" />
+                <ScalarProperty Name="SecondReportingPersonCode" ColumnName="SecondReportingPersonCode" />
+                <ScalarProperty Name="GlobalId" ColumnName="GlobalId" />
+                <ScalarProperty Name="ContactPersonEmail" ColumnName="ContactPersonEmail" />
+                <ScalarProperty Name="ContactPerson2Email" ColumnName="ContactPerson2Email" />
+                <ScalarProperty Name="SkypeId" ColumnName="SkypeId" />
+                <ScalarProperty Name="LinkedInId" ColumnName="LinkedInId" />
+                <ScalarProperty Name="HousingAmount" ColumnName="HousingAmount" />
+                <ScalarProperty Name="TransportationAmount" ColumnName="TransportationAmount" />
+                <ScalarProperty Name="PlaceOfBirth" ColumnName="PlaceOfBirth" />
+                <ScalarProperty Name="FatherResidentialAddress" ColumnName="FatherResidentialAddress" />
+                <ScalarProperty Name="FatherPassportNumber" ColumnName="FatherPassportNumber" />
+                <ScalarProperty Name="FatherContactNumber" ColumnName="FatherContactNumber" />
+                <ScalarProperty Name="MotherResidentialAddress" ColumnName="MotherResidentialAddress" />
+                <ScalarProperty Name="MotherPassportNumber" ColumnName="MotherPassportNumber" />
+                <ScalarProperty Name="MotherContactNumber" ColumnName="MotherContactNumber" />
+                <ScalarProperty Name="CompanyAssignedDate" ColumnName="CompanyAssignedDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
